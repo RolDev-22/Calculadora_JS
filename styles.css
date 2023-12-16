@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+/* 
+    font-family: 'Cinzel', serif; 
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Cinzel", serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  background-color: black;
+  min-width: 300px;
+  min-height: 500px;
+  transition: all 0.5s ease;
+}
+
+@media (0px <= width <= 400px) {
+  .containerCalcu {
+    width: 300px;
+    height: 80%;
+    padding: 0px 3px 3px 3px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: -5px -3px 5px 2px black, 0 0 2em rgb(0, 247, 255),
+      0 0 1em rgb(0, 255, 136);
+  }
+
+  #tittleCalc {
+    font-size: 30px;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(0, 247, 255),
+      0 0 0.2em rgb(0, 255, 136);
+    color: white;
+  }
+
+  .containerCalcu #pantalla {
+    width: 90%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .containerCalcu #pantallaCalcu {
+    width: 100%;
+    height: 60%;
+    background-color: chartreuse;
+    outline: none;
+    font-size: 50px;
+    padding: 5px;
+    border: 3px inset rgb(202, 198, 198);
+    text-align: right;
+    color: rgb(255, 255, 255);
+  }
+
+  .containerCalcu #acciones {
+    width: 95%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 5px;
+    border: 1px transparent;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 5px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .containerCalcu #itemCalc {
+    width: 100%;
+    height: 95%;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: #1ccf84;
+    border: 5px outset rgb(213, 233, 225);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    cursor: default;
+  }
+
+  .containerCalcu #itemCalc:nth-child(1) {
+    grid-row: 0;
+    grid-column: 0/4;
+    background-color: #ff524f;
+  }
+
+  .containerCalcu #itemCalc:nth-child(2) {
+    grid-row: 0;
+    grid-column: 4;
+    background-color: #fbff01;
+  }
+
+  .containerCalcu #itemCalc:nth-child(12) {
+    grid-row: 5;
+    grid-column: 1;
+  }
+
+  .containerCalcu #itemCalc:nth-child(13) {
+    grid-row: 2;
+    grid-column: 4;
+    background-color: rgb(255, 145, 0);
+  }
+
+  .containerCalcu #itemCalc:nth-child(14) {
+    grid-row: 3;
+    grid-column: 4;
+    background-color: rgb(255, 145, 0);
+  }
+
+  .containerCalcu #itemCalc:nth-child(15) {
+    grid-row: 4;
+    grid-column: 4;
+    background-color: rgb(255, 145, 0);
+  }
+
+  .containerCalcu #itemCalc:nth-child(16) {
+    grid-row: 5;
+    grid-column: 4;
+    background-color: rgb(255, 145, 0);
+  }
+
+  .containerCalcu #itemCalc:nth-child(17) {
+    grid-row: 5;
+    grid-column: 2;
+  }
+
+  .containerCalcu #itemCalc:nth-child(18) {
+    grid-row: 5;
+    grid-column: 3;
+  }
+
+  .containerCalcu #itemCalc:hover {
+    transform: scale(1.05);
+    background-color: #fff;
+  }
+}
+
+@media (401px <= width) {
+
+  .containerCalcu {
+    width: 300px;
+    height: 80%;
+    padding: 0px 3px 3px 3px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: -5px -3px 5px 2px black, 0 0 2em rgb(0, 247, 255),
+      0 0 1em rgb(0, 255, 136);
+  }
+
+  #tittleCalc {
+    font-size: 40px;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(0, 247, 255),
+      0 0 0.2em rgb(0, 255, 136);
+    color: white;
+  }
+
+  .containerCalcu #pantalla {
+    width: 90%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .containerCalcu #pantallaCalcu {
+    width: 100%;
+    height: 60%;
+    background-color: chartreuse;
+    outline: none;
+    font-size: 50px;
+    padding: 5px;
+    border: 3px inset rgb(202, 198, 198);
+    text-align: right;
+    color: rgb(255, 255, 255);
+  }
+
+  .containerCalcu #acciones {
+    width: 95%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 5px;
+    border: 1px transparent;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 5px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .containerCalcu #itemCalc {
+    width: 100%;
+    height: 95%;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: #1ccf84;
+    border: 5px outset rgb(213, 233, 225);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    cursor: default;
+  }
+
+  .containerCalcu #itemCalc:nth-child(1) {
+    grid-row: 0;
+    grid-column: 0/4;
+    background-color: #ff524f;
+  }
+
+  .containerCalcu #itemCalc:nth-child(2) {
+    grid-row: 0;
+    grid-column: 4;
+    background-color: #fbff01;
+  }
+
+  .containerCalcu #itemCalc:nth-child(12) {
+    grid-row: 5;
+    grid-column: 1;
+  }
+
+  .containerCalcu #itemCalc:nth-child(13) {
+    grid-row: 2;
+    grid-column: 4;
+    background-color: rgb(255, 145, 0);
+  }
+
+  .containerCalcu #itemCalc:nth-child(14) {
+    grid-row: 3;
+    grid-column: 4;
+    background-color: rgb(255, 145, 0);
+  }
+
+  .containerCalcu #itemCalc:nth-child(15) {
+    grid-row: 4;
+    grid-column: 4;
+    background-color: rgb(255, 145, 0);
+  }
+
+  .containerCalcu #itemCalc:nth-child(16) {
+    grid-row: 5;
+    grid-column: 4;
+    background-color: rgb(255, 145, 0);
+  }
+
+  .containerCalcu #itemCalc:nth-child(17) {
+    grid-row: 5;
+    grid-column: 2;
+  }
+
+  .containerCalcu #itemCalc:nth-child(18) {
+    grid-row: 5;
+    grid-column: 3;
+  }
+
+  .containerCalcu #itemCalc:hover {
+    transform: scale(1.05);
+    background-color: #fff;
+  }
+
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora_JS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="tittleCalc">Calculadora Rol_JS</h1>
+
+    <div class="containerCalcu">
+      <div id="pantalla">
+        <input readonly type="text" name="pantallaCalcu" id="pantallaCalcu" />
+      </div>
+
+      <divc id="acciones">
+        <input type='button' id="itemCalc" value ='AC'onclick="borrar()"/>
+        <input type='button' id="itemCalc" value ='C' onclick="eliminarUno()"/>
+        <input type='button' id="itemCalc" value ='7' onclick="insert(`7`)"/>
+        <input type='button' id="itemCalc" value ='8' onclick="insert(`8`)"/>
+        <input type='button' id="itemCalc" value ='9' onclick="insert(`9`)"/>
+        <input type='button' id="itemCalc" value ='4' onclick="insert(`4`)"/>
+        <input type='button' id="itemCalc" value ='5' onclick="insert(`5`)"/>
+        <input type='button' id="itemCalc" value ='6' onclick="insert(`6`)"/>
+        <input type='button' id="itemCalc" value ='1' onclick="insert(`1`)"/>
+        <input type='button' id="itemCalc" value ='2' onclick="insert(`2`)"/>
+        <input type='button' id="itemCalc" value ='3' onclick="insert(`3`)"/>
+        <input type='button' id="itemCalc" value ='0' onclick="insert(`0`)"/>
+        <input type='button' id="itemCalc" value ='×' onclick="insert(`*`)"/>
+        <input type='button' id="itemCalc" value ='÷' onclick="insert(`/`)"/>
+        <input type='button' id="itemCalc" value ='+' onclick="insert(`+`)"/>
+        <input type='button' id="itemCalc" value ='-' onclick="insert(`-`)"/>
+        <input type='button' id="itemCalc" value ='.' onclick="insert(`.`)"/>
+        <input type='button' id="itemCalc" value ='=' onclick= "calcular()"/>
+      </divc
+    </div>
+  </body>
+  <script src="scripts.js"></script>
+</html>
